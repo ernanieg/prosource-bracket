@@ -12,7 +12,7 @@
             Console.Write("Please enter string: ");
             string inputString = Console.ReadLine() ?? "";
             if (inputString == string.Empty) return;
-            Console.WriteLine(ValidBrackets(inputString));
+            Console.WriteLine(IsValidBrackets(inputString));
         }
     }
 
@@ -21,7 +21,7 @@
     /// </summary>
     /// <param name="input"></param>
     /// <returns></returns>
-    private static bool ValidBrackets(string input)
+    private static bool IsValidBrackets(string input)
     {
         // remove all characters except for open and close brackets
         string cleanedString = CleanString(input);
